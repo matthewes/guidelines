@@ -1,0 +1,51 @@
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+	background: #000;
+    color: #fff;
+}
+
+body * {
+    color: #ffffff !important;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #111111 !important;
+}
+
+.table-bordered {
+  border: 1px solid #6d6d6d;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #6d6d6d;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+
+
+.HighLighto
+{
+	background-color: #313333;
+}
+
+.SearchResult
+{
+    background-color: #1d8fbb;
+}
+
+::selection
+{
+	background-color: #98d9f1;
+}
