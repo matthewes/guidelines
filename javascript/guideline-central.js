@@ -20,9 +20,7 @@ function findmaxTDCount(table) {
 }
 
 $(document).ready(function() {
-	
-	alert('Testing');
-		
+			
 	$("table").addClass('table').addClass('table-bordered').addClass('table-responsive');
 	
 	$("table:not(table table):not(table > table):not(:parent(table))").each(function() {
