@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+	background: #FFF;
+    color: #000;
+}
+
+.HighLighto
+{
+	background-color: #DEE5DB;
+}
+
+.SearchResult
+{
+    background-color: #1d8fbb;
+}
+
+::selection
+{
+	background-color: #98d9f1;
+}
+
+table.table-bordered td, table.table-bordered th, {
+	border: 1px solid black;
+}
