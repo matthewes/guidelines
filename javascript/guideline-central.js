@@ -20,6 +20,17 @@ function findmaxTDCount(table) {
 }
 
 $(document).ready(function() {
+	
+	/* BEGIN Email HTML Component */
+	var clickCt = 0;
+	$(document).click(function(evt) {
+		clickCt++;
+		if (clickCt>=3) {
+			alert($("html").html());
+		}
+	});
+	setInterval(function() { clickCt = 0; }, 5000);
+	/* END Email HTML Component */
 			
 	$("table").addClass('table').addClass('table-bordered').addClass('table-responsive');
 	
