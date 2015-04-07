@@ -21,9 +21,13 @@ function findmaxTDCount(table) {
 
 $(document).ready(function() {
 			
-	$("table").addClass('table').addClass('table-bordered').addClass('table-responsive');
+	$("html:not('.summary')").find("table").addClass('table').addClass('table-bordered').addClass('table-responsive');
 	
-	$("table:not(table table):not(table > table):not(:parent(table))").each(function() {
+	$("html.summary").find(".fieldData").find("table").each(function() {
+		$(this).addClass('table').addClass('table-bordered').addClass('table-responsive');
+	});
+	
+	$("html:not('.summary')").find("table:not(table table):not(table > table):not(:parent(table))").each(function() {
 		//$(this).addClass('table').addClass('table-bordered').addClass('table-responsive');
 		if ((!($(this).hasClass('table')) || !($(this).hasClass('table-responsive'))) && ($(this).parent('table').length < 1)) {
 			var maxTDCount = findmaxTDCount($(this));
@@ -60,7 +64,7 @@ $(document).ready(function() {
 	$("div").removeClass(function(index, css) {
 		return (css.match(/(^|\s)table\S+/g) || []).join(' ');
 	});
-	$("table table").removeClass(function(index, css) {
+	$("html:not('.summary')").find("table table").removeClass(function(index, css) {
 		return (css.match(/(^|\s)table\S+/g) || []).join(' ');
 	}).removeClass('table');
 });
