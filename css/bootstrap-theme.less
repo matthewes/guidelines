@@ -257,6 +257,29 @@
   background-color: #c12e2a;
   background-image: none;
 }
+
+
+.btn-guidelines {
+	background: #BFBFBF;
+   font-size: 120%;
+   color: #fff;
+   font-weight: 400;
+   text-align: center;
+   padding: 10pt;
+   border: none;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   &:hover, &:active {
+	   color: #fff;
+   }
+}
+
+
+
 .thumbnail,
 .img-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -560,7 +583,7 @@
    margin-bottom: 5pt;
    font-size: 90%;
    padding: 5pt;
-   background: #797a7d;
+   background: @lightGreyColor;
    border: none;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
@@ -568,6 +591,7 @@
  }
 
 @greyColor: #7F7F7F;
+@lightGreyColor: #BFBFBF;
 @greenColor: #69B65C;
 @cyanColor: #7CD0D8;
 @redColor: #E7353F;
