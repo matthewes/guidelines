@@ -760,3 +760,52 @@ html.summary {
 		margin-bottom: 20px;
 	}
 }
+
+
+html.epss {
+	h3, h4 {
+		border-bottom-color: rgb(224, 224, 224);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		box-sizing: border-box;
+		color: rgb(102, 102, 102);
+		display: block;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 26px;
+		margin-bottom: 12px;
+		margin-top: 20px;
+		padding-bottom: 8px;
+		position: relative;
+	}
+	h2, h3[id] {
+		border-bottom: none;
+		color: @blueColor;
+		box-sizing: border-box;
+		display: block;
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 35px;
+		margin-bottom: 8px;
+		margin-top: 8px;
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+		position: relative;
+	}
+}
+
+
+html.drug {
+	.DocumentTitle {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 150%;
+	}
+	h1 {
+		color: @greenColor;
+	}
+	h2 {
+		color: @blueColor;
+	}
+}
