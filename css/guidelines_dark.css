@@ -49,3 +49,7 @@ body * {
 {
 	background-color: #98d9f1;
 }
+
+html.summary div.dlSectionLbl {
+	background: #494949;
+}
